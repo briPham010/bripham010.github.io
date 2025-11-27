@@ -28,6 +28,21 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    /* Custom hover effect for Portfolio and Skills items */
+    #portfolio .icon-box,
+    #skills .icon-box {
+      transition: all 0.3s ease-in-out;
+      background: #fff; /* Ensure card pops against background */
+      border-radius: 10px; /* Optional: adds subtle rounding if not present */
+    }
+
+    #portfolio .icon-box:hover,
+    #skills .icon-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+    }
+  </style>
 
 </head>
 
@@ -41,8 +56,9 @@
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="#skills"><i class="bi bi-envelope navicon"></i><span>Skills</span></a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
     </nav>
 
   </header>
@@ -58,7 +74,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-9">
             <p> Hey there! My name is</p>
-            <h2><span class="typed" data-typed-items="Brian Pham</span><span class=" typed-cursor typed-cursor--blink"
+            <h2><span class="typed" data-typed-items="Brian Pham"></span><span class=" typed-cursor typed-cursor--blink"
                 aria-hidden="true"></span></h2>
             <div class="social-links">
               <a href="#"><i class="bi bi-envelope"></i></a>
@@ -96,7 +112,7 @@
 
         <div class="row">
 
-                   <div class="col mt-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col mt-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="icon">
                 <img style="width: 40px; height: 40px" src="assets/img/icons/java.svg">
@@ -182,7 +198,7 @@
               <div class="icon">
                 <img style="width: 40px; height: 40px" src="assets/img/icons/powerbi.png">
               </div>
-              <h4>PowerBI</h4>
+              <h4>PowerBi</h4>
             </div>
           </div>
 
@@ -206,17 +222,17 @@
 
         </div>
       </div>
-      </div>
     </section>
 
+    <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section-bg">
-      <div class="container pad-side" data-aos="fade-up">
-
+      <div class="container">
+        
         <div class="section-title">
           <h2>Portfolio</h2>
         </div>
 
-       <div class="row">
+        <div class="row">
           <div class="col mt-4" data-aos="zoom-in" data-aos-delay="100">
             <!-- Added "align-items-center" to the row to vertically center the image -->
             <div class="icon-box iconbox-blue left">
@@ -225,18 +241,18 @@
                 <!-- Image Column: Replaced static image with Carousel -->
                 <div class="col-md-5 mb-3 mb-md-0" data-aos="zoom-in" data-aos-delay="100">
                   
-                  <div id="portfolioCarousel1" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                  <div id="portfolioCarousel1" class="carousel slide carousel-dark" data-bs-ride="carousel" data-bs-interval="3000">
                     <div class="carousel-inner rounded">
                       <!-- Slide 1 -->
-                      <div class="carousel-item active" data-bs-interval="4000">
+                      <div class="carousel-item active" data-bs-interval="3000">
                         <img src="assets/img/ushareit.png" class="d-block w-100 img-fluid" alt="U-share-iT Image 1">
                       </div>
                       <!-- Slide 2: Replace src with your next image -->
-                      <div class="carousel-item" data-bs-interval="4000">
+                      <div class="carousel-item" data-bs-interval="3000">
                         <img src="assets/img/ushareit2.png" class="d-block w-100 img-fluid" alt="U-share-iT Image 2">
                       </div>
                       <!-- Slide 3: Replace src with your next image -->
-                      <div class="carousel-item" data-bs-interval="4000">
+                      <div class="carousel-item" data-bs-interval="3000">
                         <img src="assets/img/ushareit3.png" class="d-block w-100 img-fluid" alt="U-share-iT Image 3">
                       </div>
                     </div>
@@ -256,7 +272,7 @@
 
                 <!-- Text Column -->
                 <div class="col-md-7 iconbox-text" data-aos="zoom-in" data-aos-delay="100">
-                  <h4>U-share-iT</h4>
+                  <h4><span style="color: #bf5700;">U</span>-share-i<span style="color: #bf5700;">T</span></h4>
                   <!-- Changed accent-blue to text-primary so it works immediately -->
                   <h6>Technologies Used: 
                     <span class="text-primary">Wordpress</span>, 
@@ -278,19 +294,14 @@
 
       </div>
     </section>
-
-
-
+      
     <!-- Resume Section -->
-    <section id="resume" class="resume section">
-      <div>
-
-      </div>
-
-      <!-- Section Title -->
+    <!-- Added id="resume" so navigation works -->
+    <section id="resume" class="resume">
+      
       <div class="container section-title" data-aos="fade-up">
         <h2>Experience</h2>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container">
 
@@ -310,19 +321,18 @@
               <p>&emsp; - Tzu Chi Collegiate Association (Special Events Coordinator)</p>
               <p>&emsp; - American Statistical Association (Member)</p>
               <p>&emsp; - Freshman Research Initiative (Big Data in Biology)</p>
-            </div><!-- Edn Resume Item -->
-
+            </div>
 
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
-              <h4>U-share-iT-Undergraduate Intern</h4>
+              <h4>U-share-iT Undergraduate Intern</h4>
               <h5>Sept 2024 - Present</h5>
               <p><em>Maseeh Department of Civil, Architectural and Environmental Engineering, Austin, Texas </em></p>
               <ul>
-                <li>•	Developed and launched U-share-iT; a web platform that facilitates 
+                <li>Developed and launched U-share-iT; a web platform that facilitates 
                   the redistribution of surplus laboratory instruments and equipment among researchers, 
                   lowering procurement costs by over $50,000 and diverting approximately 100lbs of 
                   equipment from landfill.</li>
@@ -333,8 +343,7 @@
                     usage (n ≈ 75 labs), translating findings into data‑driven recommendations 
                     that informed university sustainability policy discussions.</li>
               </ul>
-            </div><!-- Edn Resume Item -->
-
+            </div>
 
             <div class="resume-item">
               <h4>Information Technology Summer Intern</h4>
@@ -347,7 +356,7 @@
                   keep others up to date on device statuses. </li>
                 <li>Assisted in the implementation and testing of various educational software.</li>
               </ul>
-            </div><!-- Edn Resume Item -->
+            </div>
 
           </div>
 
@@ -355,9 +364,7 @@
 
       </div>
 
-    </section><!-- /Resume Section -->
-
-
+    </section>
 
   </main>
 
