@@ -698,6 +698,10 @@ section,
   color: #149ddd; /* This matches the standard "iPortfolio" template blue */
 }
 
+.accent-orange {
+  color: #CC5500;
+}
+
 .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
