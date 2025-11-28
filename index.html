@@ -59,8 +59,8 @@
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
         <li><a href="#skills"><i class="bi bi-envelope navicon"></i><span>Skills</span></a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="#paortfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
     </nav>
 
   </header>
@@ -99,7 +99,8 @@
         <div class="section-title">
           <h2>About</h2>
           <!-- Added text-center text-lg-start to center text on mobile -->
-          <p class="text-center text-lg-start" style="font-size: large;">I'm a student at the University of Texas at Austin pursuing a degree in
+          <p class="text-center text-lg-start" style="font-size: large;">I'm a student at the University of Texas at
+            Austin pursuing a degree in
             statistics and data science and a minor in computer science. I am actively seeking an internship in data
             science and analyst roles. I'm thrilled to connect with like-minded individuals who share my
             enthusiasm for problem solving and more!</p>
@@ -239,32 +240,27 @@
         </div>
 
         <div class="row justify-content-center">
-          <div class="col mt-4" data-aos="zoom-in" data-aos-delay="100">
-            <!-- Added "align-items-center" to the row to vertically center the image -->
+          <div class="col-12 mt-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue left">
               <div class="row align-items-center">
 
-                <!-- Image Column: Replaced static image with Carousel -->
                 <div class="col-md-5 mb-3 mb-md-0" data-aos="zoom-in" data-aos-delay="100">
-
                   <div id="portfolioCarousel1" class="carousel slide carousel-dark" data-bs-ride="carousel"
                     data-bs-interval="3000">
                     <div class="carousel-inner rounded">
-                      <!-- Slide 1 -->
                       <div class="carousel-item active" data-bs-interval="10000">
                         <img src="assets/img/ushareit.png" class="d-block w-100 img-fluid" alt="U-share-iT Image 1">
                       </div>
-                      <!-- Slide 2: Replace src with your next image -->
+
                       <div class="carousel-item" data-bs-interval="3000">
                         <img src="assets/img/ushareit2.png" class="d-block w-100 img-fluid" alt="U-share-iT Image 2">
                       </div>
-                      <!-- Slide 3: Replace src with your next image -->
+
                       <div class="carousel-item" data-bs-interval="3000">
                         <img src="assets/img/ushareit3.png" class="d-block w-100 img-fluid" alt="U-share-iT Image 3">
                       </div>
                     </div>
 
-                    <!-- Controls -->
                     <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel1"
                       data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -276,37 +272,82 @@
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
-
                 </div>
-
-                <!-- Text Column -->
-                <!-- Added text-center text-md-start to ensure centering on mobile -->
                 <div class="col-md-7 iconbox-text text-center text-md-start" data-aos="zoom-in" data-aos-delay="100">
-                  <h4><strong><span style="color: #bf5700;">U</span>-share-i<span style="color: #bf5700;">T</span></strong></h4>
-                  <!-- Changed accent-blue to text-primary so it works immediately -->
+                  <h4><span style="color: #bf5700;">U</span>-share-i<span style="color: #bf5700;">T</span></h4>
                   <h6>Technologies Used:
                     <span class="text-primary">Wordpress</span>,
                     <span class="text-primary">HTML</span>,
                     <span class="text-primary">CSS</span>,
-                    <span class="text-primary">Javascript</span>
+                    <span class="text-primary">Javascript</span>,
+                    <span class="text-primary">Excel</span>
                   </h6>
-                  <!-- Removed text-start so it inherits text-center on mobile and text-md-start on desktop -->
                   <ul class="no-padding-list">
-                    <li>Engineered a web platform to facilitate the rehome of laboratory equipment and instrumentation across
+                    <li>Built a web platform to facilitate the rehome of laboratory equipment and instrumentation across
                       UT campus.</li>
                     <li>As of November 2025, over $50,000 has been saved in procurement costs and over 600 lbs of waste
                       has been diverted from landfills.</li>
                   </ul>
                 </div>
+
+              </div>
+            </div>  
+          </div>
+          <div class="col-12 mt-5" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue left">
+              <div class="row align-items-center">
+
+                <div class="col-md-5 mb-3 mb-md-0 order-md-2" data-aos="zoom-in" data-aos-delay="100">
+                  <div id="portfolioCarousel2" class="carousel slide carousel-dark" data-bs-ride="carousel"
+                    data-bs-interval="3000">
+                    <div class="carousel-inner rounded">
+                      <div class="carousel-item active">
+                        <img src="assets/img/game1.png" class="d-block w-100 img-fluid" alt="Project 2 Image 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/game2.png" class="d-block w-100 img-fluid" alt="Project 2 Image 2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/game3.png" class="d-block w-100 img-fluid" alt="Project 2 Image 3">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel2"
+                      data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel2"
+                      data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col-md-7 iconbox-text text-center text-md-start order-md-1 ps-md-5" data-aos="zoom-in"
+                  data-aos-delay="100">
+                  <h4>Assessment Prep</h4>
+                  <h6>Technologies Used:
+                    <span class="text-primary">React</span>,
+                    <span class="text-primary">Python</span>,
+                  </h6>
+                  <ul class="no-padding-list">
+                    <li>Developed a mental arithmetic and sequence game to aid students in preparing for technical
+                      online assessments. </li>
+                    <li>Tracks user improvement via caching.</li>
+                  </ul>
+                </div>
+
               </div>
             </div>
           </div>
+
         </div>
+
       </div>
     </section>
 
     <!-- Resume Section -->
-    <!-- Added id="resume" so navigation works -->
     <section id="resume" class="resume">
 
       <div class="container section-title" data-aos="fade-up">
@@ -316,10 +357,7 @@
       <div class="container">
 
         <div class="row">
-
-          <!-- Added text-center text-lg-start to col-lg-6 so contents center on mobile and align left on large screens -->
           <div class="col-lg-6 text-center text-lg-start" data-aos="fade-up" data-aos-delay="100">
-
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
               <h4>Bachelor of Science in Statistics and Data Science</h4>
@@ -337,7 +375,6 @@
 
           </div>
 
-          <!-- Added text-center text-lg-start here as well -->
           <div class="col-lg-6 text-center text-lg-start" data-aos="fade-up" data-aos-delay="200">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
